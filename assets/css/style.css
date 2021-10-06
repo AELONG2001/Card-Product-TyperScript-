@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   background-color: #faf6f6;
+   height: 1500px;
+}
+
+h3, p {
+    margin: 0;
+}
+
+.price-main-color {
+    font-size: 22px;
+    color: #eb0a0a;
+}
+
+.price-main-vat {
+    opacity: 0.7;
+}
+
+.card__product {
+    height: 390px;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    min-height: 50px;
+}
+

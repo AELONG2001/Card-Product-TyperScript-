@@ -1,0 +1,19 @@
+{
+  "name": "workspace-typerscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "systemjs": "^6.10.3",
+    "typerscript": "^0.2.3"
+  },
+  "dependencies": {
+    "es6-module-loader": "^0.17.11",
+    "traceur": "^0.0.111"
+  }
+}

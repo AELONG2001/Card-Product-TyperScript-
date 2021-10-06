@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap5.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row pt-4 pb-3">
+            <div class="col-12">
+                <div class="alert alert-success d-flex" role="alert">
+                    <div class="pe-1"><i class="far fa-check-circle"></i></div>
+                    <div class="pe-2"><strong>Tên Sản Phẩm!</strong></div>
+                    <div><span>Đã được thêm vào giỏ hàng</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top pt-3 amount_product" style="font-size: 24px;">Giỏ Hàng <span class="amount-product-content"></span></div>
+
+    
+        <div class="row" style="width:1128px; margin: auto">
+            <div class="col-8 mt-2 list__card-product">
+
+            </div>
+
+            <div class="col-4 mt-2">
+                <div class="price card card-block">
+                    <div class="price-first d-flex justify-content-between px-2 py-3">
+                        <div>Tạm tính</div>
+                        <div class="curr_price"></div>
+                    </div>
+    
+                    <div class="price-main d-flex justify-content-between mx-2 pt-3 border-top">
+                        <div>Tạm tính</div>
+                        <div class="price-main-color curr_price-vat"></div>
+                    </div>
+                    <div class="text-end pe-2 price-main-vat">(Đã bao gồm VAT)</div>
+                    <a href="" class="btn btn-danger mt-3">Tiến hành đặt hàng</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-4 list__products">
+           
+        </div>
+    </div>
+
+<script src="./node_modules/traceur/bin/traceur.js"></script>
+<script src="./node_modules/systemjs/dist/system.js"></script>
+<script src="./node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
+
+<script>
+    System.import('./js/app.js')
+</script>
+
+</body>
+</html>
+
