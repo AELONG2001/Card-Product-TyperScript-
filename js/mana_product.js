@@ -8,9 +8,9 @@ var manaProducts = /** @class */ (function () {
         this.addProduct(product2);
         var product3 = new Products(3, './assets/img/img3.jpg', 'Ốp lưng điện thoại', 60000, 'Ốp lưng điện thoại kiểu dáng đẹp', false);
         this.addProduct(product3);
-        var product4 = new Products(4, './assets/img/img4.jpg', 'Ví da nam', 80000, 'Ví da nam dành cho nam màu đen', true);
+        var product4 = new Products(4, './assets/img/img4.jpg', 'Ví da nam', 80000, 'Ví da dành cho nam màu đen', true);
         this.addProduct(product4);
-        var product5 = new Products(5, './assets/img/img5.jpg', 'Giày Nam nữ', 160000, 'Giày thể thao cho Nam và Nũ', true);
+        var product5 = new Products(5, './assets/img/img5.jpg', 'Giày Nam nữ', 160000, 'Giày thể thao cho Nam và Nữ', true);
         this.addProduct(product5);
     }
     manaProducts.prototype.getProducts = function () {

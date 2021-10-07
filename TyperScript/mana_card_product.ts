@@ -29,7 +29,15 @@ export class manaCardProduct {
 
       return -1
     }
-    public updateProductCard(product : Products, amount : number) : void {}
+    public updateProductCard(product : Products, amount : number) : void {
+      for(let i : number = 0; i < this.cardProducts.length; i++) {
+          let idProduct = this.cardProducts[i].getCardProduct().id
+          if(idProduct === product.id) {
+            this.cardProducts[i].changeAmountProduct(amount);
+          }
+
+        }
+    }
 
     public calcAmount():number {
        let count : number = 0;
@@ -76,12 +84,11 @@ export class manaCardProduct {
                       </div>
 
                       <div class="col-1">
-                          <input type="number" name="" id="" value="${this.cardProducts[i].getAmount()}" min="1" max="99" class="form-group text-center" style="width: 100%;">
+                          <input type="number" name="" id="" class="input_product" value="${this.cardProducts[i].getAmount()}" min="1" max="99" class="form-group text-center" style="width: 100%;" data-index = "${this.cardProducts[i].getCardProduct().id}">
                       </div>
 
-                      <div class="col-3">
-                          <button class="btn btn-success">Update</button>
-                          <button class="btn btn-outline-danger">Delete</button>
+                      <div class="col-2">
+                          <button class="btn btn-outline-danger ms-3">Delete</button>
                       </div>
 
                 </div>
